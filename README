@@ -5,3 +5,5 @@ index.php contains the form for composing the message. The form on that page POS
 No input validation has been performed, the main focus of this script is the actual sending of multipart email messages.
 
 In order for the email to be delivered, sendmail and postfix will have to be properly configured. If run on a personal computer, and if forward-confirmed reverse DNS is not setup, email will likely be marked as SPAM.
+
+Also, the from address will likely have to match the domain of the mail server specified in the postfix configuration.
